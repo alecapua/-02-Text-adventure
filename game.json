@@ -1,0 +1,266 @@
+{
+    "WHOUS": {
+        "name": "West of House",
+        "desc": "This is an open field west of a white house, with a boarded front door.",
+        "exits": [{
+            "exit": "NORTH",
+            "target": "NHOUS"
+        }, {
+            "exit": "SOUTH",
+            "target": "SHOUS"
+        }, {
+            "exit": "WEST",
+            "target": "FORE1"
+        }],
+        "items": [
+            {
+                "item": "PAMPHLET",
+                "desc": "A pamphlet is lying on the ground, near the front door.",
+                "take": "You pick the pamphlet up off the ground."
+            }
+        ]
+    },
+    "NHOUS": {
+        "name": "North of House",
+        "desc": "You are facing the north side of a white house.  There is no door here,\nand all the windows are barred.",
+        "exits": [{
+            "exit": "WEST",
+            "target": "WHOUS"
+        }, {
+            "exit": "EAST",
+            "target": "EHOUS"
+        }, {
+            "exit": "NORTH",
+            "target": "FORE3"
+        }],
+        "items": []
+    },
+    "SHOUS": {
+        "name": "South of House",
+        "desc": "You are facing the south side of a white house. There is no door here,\nand all the windows are barred.",
+        "exits": [{
+            "exit": "WEST",
+            "target": "WHOUS"
+        }, {
+            "exit": "EAST",
+            "target": "EHOUS"
+        }, {
+            "exit": "SOUTH",
+            "target": "FORE2"
+        }],
+        "items": []
+    },
+    "EHOUS": {
+        "name": "Behind House",
+        "desc": "",
+        "exits": [{
+            "exit": "NORTH",
+            "target": "NHOUS"
+        }, {
+            "exit": "SOUTH",
+            "target": "SHOUS"
+        }, {
+            "exit": "EAST",
+            "target": "CLEAR"
+        }, {
+            "exit": "WEST",
+            "target": "KITCH"
+        }, {
+            "exit": "ENTER",
+            "target": "KITCH"
+        }],
+        "items": []
+    },
+    "KITCH": {
+        "name": "Kitchen",
+        "desc": "",
+        "exits": [{
+            "exit": "EAST",
+            "target": "EHOUS"
+        }, {
+            "exit": "WEST",
+            "target": "LROOM"
+        }, {
+            "exit": "EXIT",
+            "target": "EHOUS"
+        }, {
+            "exit": "UP",
+            "target": "ATTIC"
+        }],
+        "items": []
+    },
+    "ATTIC": {
+        "name": "Attic",
+        "desc": "This is the attic.  The only exit is stairs that lead down.",
+        "exits": [{
+            "exit": "DOWN",
+            "target": "KITCH"
+        }],
+        "items": []
+    },
+    "LROOM": {
+        "name": "Living Room",
+        "desc": "",
+        "exits": [{
+            "exit": "EAST",
+            "target": "KITCH"
+        }, {
+            "exit": "WEST",
+            "target": "BLROO"
+        }, {
+            "exit": "DOWN",
+            "target": "CELLA"
+        }],
+        "items": [
+            {
+                "item": "SWORD",
+                "desc": "An ornately carved sword is displayed on the wall.",
+                "take": "You take the sword from the wall. It glows slightly in your hand."
+            }
+        ]
+    },
+    "FORE1": {
+        "name": "Forest",
+        "desc": "This is a forest, with trees in all directions around you.",
+        "exits": [{
+            "exit": "NORTH",
+            "target": "FORE1"
+        }, {
+            "exit": "EAST",
+            "target": "FORE3"
+        }, {
+            "exit": "SOUTH",
+            "target": "FORE2"
+        }, {
+            "exit": "WEST",
+            "target": "FORE1"
+        }],
+        "items": []
+    },
+    "FORE2": {
+        "name": "Forest",
+        "desc": "This is a dimly lit forest, with large trees all around.  To the\neast, there appears to be sunlight.",
+        "exits": [{
+            "exit": "NORTH",
+            "target": "SHOUS"
+        }, {
+            "exit": "EAST",
+            "target": "CLEAR"
+        }, {
+            "exit": "SOUTH",
+            "target": "FORE4"
+        }, {
+            "exit": "WEST",
+            "target": "FORE1"
+        }],
+        "items": []
+    },
+    "FORE3": {
+        "name": "Forest",
+        "desc": "This is a dimly lit forest, with large trees all around.  One\nparticularly large tree with some low branches stands here.",
+        "exits": [{
+            "exit": "UP",
+            "target": "TREE"
+        }, {
+            "exit": "NORTH",
+            "target": "FORE2"
+        }, {
+            "exit": "EAST",
+            "target": "CLEAR"
+        }, {
+            "exit": "SOUTH",
+            "target": "CLEAR"
+        }, {
+            "exit": "WEST",
+            "target": "NHOUS"
+        }],
+        "items": []
+    },
+    "TREE": {
+        "name": "Up a Tree",
+        "desc": "",
+        "exits": [{
+            "exit": "DOWN",
+            "target": "FORE3"
+        }],
+        "items": []
+    },
+    "FORE4": {
+        "name": "Forest",
+        "desc": "This is a large forest, with trees obstructing all views except\nto the east, where a small clearing may be seen through the trees.",
+        "exits": [{
+            "exit": "EAST",
+            "target": "CLTOP"
+        }, {
+            "exit": "NORTH",
+            "target": "FORE5"
+        }, {
+            "exit": "SOUTH",
+            "target": "FORE4"
+        }, {
+            "exit": "WEST",
+            "target": "FORE2"
+        }],
+        "items": []
+    },
+    "FORE5": {
+        "name": "Forest",
+        "desc": "This is a forest, with trees in all directions around you.",
+        "exits": [{
+            "exit": "NORTH",
+            "target": "FORE5"
+        }, {
+            "exit": "SE",
+            "target": "CLTOP"
+        }, {
+            "exit": "SOUTH",
+            "target": "FORE4"
+        }, {
+            "exit": "WEST",
+            "target": "FORE2"
+        }],
+        "items": []
+    },
+    "CLEAR": {
+        "name": "Clearing",
+        "desc": "",
+        "exits": [{
+            "exit": "SW",
+            "target": "EHOUS"
+        }, {
+            "exit": "SE",
+            "target": "FORE5"
+        }, {
+            "exit": "NORTH",
+            "target": "CLEAR"
+        }, {
+            "exit": "EAST",
+            "target": "CLEAR"
+        }, {
+            "exit": "WEST",
+            "target": "FORE3"
+        }, {
+            "exit": "SOUTH",
+            "target": "FORE2"
+        }, {
+            "exit": "DOWN",
+            "target": "MGRAT"
+        }],
+        "items": []
+    },
+    "CELLA": {
+        "name": "Cellar",
+        "desc": "",
+        "exits": [{
+            "exit": "EAST",
+            "target": "MTROL"
+        }, {
+            "exit": "SOUTH",
+            "target": "CHAS2"
+        }, {
+            "exit": "UP",
+            "target": "LROOM"
+        }],
+        "items": []
+    }
+}
